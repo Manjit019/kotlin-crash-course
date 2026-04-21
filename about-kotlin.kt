@@ -41,7 +41,7 @@
       !Installation :
 
       To install Kotlin, you can follow these steps:
-      1. Download the latest version of Kotlin from the official website (https://kotlinlang.org/download).
+      1. Download the latest version of Kotlin from the official website (https://kotlinlang.org) or from github (https://github.com/JetBrains/kotlin/releases).
       2. Unzip the downloaded file.
       3. Add the Kotlin binaries to your PATH environment variable. This means that the Kotlin compiler and other tools will be available from any directory in your PATH.
       4. Verify that you can run the Kotlin compiler by typing "kotlinc" in the command line. If you see the Kotlin compiler help message, then you have successfully installed Kotlin.

@@ -1,14 +1,18 @@
 {
-  "name": "kotlin-practice",
+  "name": "kotlin-crash-course",
   "version": "1.0.0",
-  "description": "Kotlin practice with notes and examples ",
-  "main": "index.js",
+  "description": "Kotlin Crash Course with Examples and Notes",
+  "main": "clean-run-compile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "kc" : "kotlinc src -include-runtime -d kotlin-practice.jar && java -jar kotlin-practice.jar"
+    "kc" : "node compile-run-clean.js"
   },
-  "keywords": [],
-  "author": "",
+  "bin": {
+    "krun": "./compile-run-clean.js"
+  },
+  "keywords": ["kotlin", "kotlin-practice", "kotlin-notes", "kotlin-examples"],
+  "author": "Manjit Kumar",
+  "repository": "https://github.com/manjit019/kotlin-crash-course",
   "license": "ISC",
   "type": "commonjs"
 }
