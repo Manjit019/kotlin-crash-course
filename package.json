@@ -1,0 +1,14 @@
+{
+  "name": "kotlin-practice",
+  "version": "1.0.0",
+  "description": "Kotlin practice with notes and examples ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "kc" : "kotlinc src -include-runtime -d kotlin-practice.jar && java -jar kotlin-practice.jar"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
