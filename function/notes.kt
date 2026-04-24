@@ -90,6 +90,19 @@
             showDetails(age = 20, name = "Amit")
         }
 
+    ! 7. varargs : 
+
+    - You can pass a variable number of arguments to a function
+
+    ? Example:
+        fun sum(vararg numbers: Int): Int {
+            var result = 0
+            for (number in numbers) {
+                result += number
+            }
+            return result
+        }
+
     --------------------------------------------------
 
 

@@ -44,6 +44,26 @@ fun sayHello(){
     println("Hello, Kotlin!");
 }
 
+fun wifeNameFinder() {
+
+    print("Enter your name: ")
+    val name = readln()
+
+    print("Enter your birth month (number): ")
+    val month = readln().toInt()
+
+    print("Enter your favorite number: ")
+    val favNum = readln().toInt()
+
+    val names = listOf("Ananya", "Priya", "Sneha", "Kavya", "Riya", "Muskan","Pooja")
+
+    val index = (name.length + month + favNum) % names.size
+
+    println("🔮 Calculating your future wife's name...")
+    println("💖 Hmm... it's ${names[index]}!")
+    println("😂 Don't take it seriously... or maybe you should 😏")
+}
+
 //parameterized function
 fun greet(name: String){
     println("Hello, $name!");
@@ -76,28 +96,42 @@ val multiply = fun(a: Int, b: Int): Int {
 
 
 fun main(args: Array<String>) {
-    // Calling a function
-    sayHello();
+    // // Calling a function
+    // sayHello();
 
-    // Calling a parameterized function
-    greet("Muskan");
+    // // Calling a parameterized function
+    // greet("Muskan");
 
-    // Calling a parameterized function with default value
-    greetWithDefault("Gaurav");
-    greetWithDefault();
+    // // Calling a parameterized function with default value
+    // greetWithDefault("Gaurav");
+    // greetWithDefault();
 
-    // Calling a function with return type
-    val result = sum(10, 20);
-    println("Sum: $result");
+    // // Calling a function with return type
+    // val result = sum(10, 20);
+    // println("Sum: $result");
 
-    // Calling a function with named arguments
-    showDetails(name = "Muskan", age = 20);
+    // // Calling a function with named arguments
+    // showDetails(name = "Muskan", age = 20);
 
-    // Calling a single expression function
-    val square = squareRoot(9.0);
-    println("Square Root: $square");
+    // // Calling a single expression function
+    // val square = squareRoot(9.0);
+    // println("Square Root: $square");
 
-    // Calling an anonymous function
-    val product = multiply(2, 3);
-    println("Product: $product");
+    // // Calling an anonymous function
+    // val product = multiply(2, 3);
+    // println("Product: $product");
+
+
+    fun sumAll(vararg numbers: Int): Int {
+        var result = 0
+        for (number in numbers) {
+            result += number
+        }
+        return result
+    }
+
+    // val sumResult = sumAll(1, 2, 3, 4, 5)
+    // println("Sum: $sumResult")
+
+    wifeNameFinder();
 }

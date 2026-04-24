@@ -84,7 +84,7 @@ function runKotlin(fileInput, options = {}) {
 
     // Run
     console.log(color("🚀 Running...\n", c.magenta));
-    execSync(`java -jar "${jarPath}"`, {
+    execSync(`java -Dfile.encoding=UTF-8 -jar "${jarPath}"`, {
       stdio: "inherit",
     });
   } finally {
