@@ -1,0 +1,15 @@
+To run coroutine files you need the coroutines library.
+
+Option 1 -> Use IntelliJ / Android Studio (recommended)
+  Add dependency in build.gradle:
+  implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
+
+Option 2 -> Download jar manually
+  Download from Maven Central
+  Compile with: kotlinc file.kt -include-runtime -d file.jar -cp kotlinx-coroutines-core-1.7.3.jar
+
+Option 3 -> Use Kotlin Playground online
+  https://play.kotlinlang.org/
+
+For this tutorial, all examples use runBlocking
+which works in regular main() functions.
