@@ -1,0 +1,16 @@
+These files need kotlinx-coroutines-core library.
+
+Option 1: IntelliJ / Android Studio (recommended)
+  Add to build.gradle.kts:
+  dependencies {
+      implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
+  }
+
+Option 2: Kotlin Playground
+  https://play.kotlinlang.org/
+  Paste code and run online
+
+Option 3: Command line with jar
+  Download: kotlinx-coroutines-core-1.7.3.jar
+  kotlinc 01_basics.kt -include-runtime -d 01.jar -cp kotlinx-coroutines-core-1.7.3.jar
+  java -cp 01.jar:kotlinx-coroutines-core-1.7.3.jar MainKt
